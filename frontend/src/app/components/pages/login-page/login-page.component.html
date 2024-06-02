@@ -1,0 +1,30 @@
+<div class="container">
+  <div class="details">
+      <app-title title="Вход"></app-title>
+
+      <form [formGroup]="loginForm" (ngSubmit)="submit()">
+
+      <text-input
+      [control]="fc.email"
+      [showErrorsWhen]="isSubmitted"
+      type="email"
+      label="Почта">
+      </text-input>
+
+      <text-input
+      [control]="fc.password"
+      [showErrorsWhen]="isSubmitted"
+      type="password"
+      label="Пароль">
+    </text-input>
+
+    <default-button text="Войти"></default-button>
+    <div class="register">
+      Новый пользователь? &nbsp;
+      <a routerLink="/register" [queryParams]="{returnUrl : returnUrl}">
+        Регистрация
+      </a>
+    </div>
+    </form>
+  </div>
+</div>

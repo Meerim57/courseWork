@@ -1,0 +1,79 @@
+.main-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0;
+}
+
+.food-container {
+  margin: 1.2rem 1rem 1.5rem .5rem;
+  width: 17rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: .5rem;
+  padding-bottom: 1rem;
+}
+
+a {
+  height: 16rem;
+  width: 16rem;
+  border-radius: 1rem;
+  margin: .5rem;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  color: black;
+}
+
+a:hover {
+  opacity: .9;
+  cursor: pointer;
+}
+
+.type,
+.price,
+.cook-time,
+.origins,
+.favorite,
+.name {
+  color: rgb(23, 23, 23);
+  font-size: 15px;
+  margin-left: .7rem;
+  margin-right: .7rem;
+}
+
+.name {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.origins,
+.cook-time {
+  margin-top: .4rem;
+  font-size: 13px;
+  color: rgb(63, 63, 63);
+}
+
+.origins-name {
+  margin-right: .2rem;
+}
+.favorite {
+  color: red;
+}
+
+.not {
+  color: black;
+}
+
+.product-item-footer,
+.above-cont {
+  display: flex;
+  justify-content: space-between;
+}
+
+.type {
+  font-size: 12px;
+  margin-top: .2rem;
+  color: #4980e3;
+}

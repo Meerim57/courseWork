@@ -1,0 +1,31 @@
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  background-image: url('/assets/images/login-img.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.details{
+  width: 28rem;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.error-list{
+  color: red;
+}
+
+.register{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+

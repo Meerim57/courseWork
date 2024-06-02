@@ -1,0 +1,46 @@
+.footer-content {
+  margin-top: 2rem;
+  background: black;
+  min-height: 10rem;
+  color: white;
+  font-size: 14px;
+  padding: 2rem 1.5rem 2rem 1.5rem;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.my-name {
+  color: #f33b20;
+  font-weight: 500;
+}
+
+.info {
+  font-size: 17px;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+}
+
+.rights {
+  margin-top: .7rem;
+  font-size: 10px;
+  color: #bdbdbd;
+  width: 25rem;
+}
+
+.cont-linking {
+  margin-bottom: .5rem;
+}
+.credits-stock,
+a {
+  color: #3f1c64;
+  margin-bottom: .2rem;
+  font-size: 12px;
+}
+
+.all-credits {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}

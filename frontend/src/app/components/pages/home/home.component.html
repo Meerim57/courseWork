@@ -1,0 +1,35 @@
+<app-search></app-search>
+<app-tags></app-tags>
+<app-not-found
+  [visible]="!foods || !foods.length"
+  resetLinkText="Сбросьте поиск"
+  notFoundImageUrl="/assets/images/search-failed.jpg"
+></app-not-found>
+<div class="main-content">
+  <div class="food-container" *ngFor="let food of foods">
+    <a routerLink="/food/{{food.id}}">
+      <img src="{{food.imageUrl}}" alt="foods">
+    </a>
+    <div class="content">
+      <div class="above-cont">
+        <div>
+          <div class="name">{{food.name}}</div>
+          <div class="type">{{food.type}}</div>
+        </div>
+        <div class="price">
+          <span> {{food.price}} рублей</span>
+        </div>
+      </div>
+      <!--<star-rating [value]="5" [totalstars]="5" checkedcolor="red" uncheckedcolor="black" size="16px" [readonly]="true"></star-rating>-->
+      <div class="product-item-footer">
+        <div class="origins">
+                    <span class="origins-name" *ngFor="let origin of food.origins">
+                        {{origin}}
+                    </span>
+        </div>
+        <div class="favorite {{food.favorite ? '': 'not'}}">&#10084; </div>
+      </div>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>

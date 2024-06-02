@@ -1,0 +1,40 @@
+.us-img {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.main-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem;
+}
+
+.about-us-title {
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: .6rem;
+}
+
+.technology-txt,
+.platform-txt {
+  font-size: 16px;
+  color: #3d3d3d;
+  margin: .7rem 2.5rem 0rem 2.5rem;
+}
+
+.txt-cont {
+  padding: 1.5rem;
+}
+
+.join-us-txt {
+  color: #3f1c64;
+  font-size: 15px;
+  margin: .7rem 2.5rem 0rem 2.5rem;
+  font-weight: 500;
+}
+

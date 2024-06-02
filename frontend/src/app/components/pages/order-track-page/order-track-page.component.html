@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="content" *ngIf="order">
+    <h1>Заказ #{{order.id}}</h1>
+    <div class="details">
+      <div><strong>Дата</strong> {{order.createdAt | date:'medium'}}</div>
+      <div><strong>Имя</strong> {{order.name}}</div>
+      <div><strong>Адрес</strong> {{order.address}}</div>
+      <div><strong>Статус</strong> {{order.status}}</div>
+      <div *ngIf="order.paymentId">
+        <strong>Оплата</strong> {{order.paymentId}}
+      </div>
+    </div>
+
+    <order-items-list [order]="order"></order-items-list>
+  </div>
+
+  <div>
+    <app-title title="Адрес доставки"></app-title>
+    <map [order]="order" [readonly]="true"></map>
+  </div>
+</div>

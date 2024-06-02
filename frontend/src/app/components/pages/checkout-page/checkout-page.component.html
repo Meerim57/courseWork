@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="content">
+    <app-title title="Оформление заказа" fontSize="1.6rem"></app-title>
+    <form [formGroup]="checkoutForm">
+      <text-input [control]="fc.name" label="Имя"></text-input>
+      <text-input [control]="fc.address" label="Адрес"></text-input>
+    </form>
+    <order-items-list [order]="order"></order-items-list>
+  </div>
+  <div class="map">
+    <app-title
+    title="Выберите свой адрес на карте"
+    fontSize="1.6rem"></app-title>
+    <map [order]="order"></map>
+  </div>
+  <div class="buttons-container">
+    <div class="buttons">
+      <button (click)="createOrder()">
+        Перейти к оплате
+      </button>
+    </div>
+  </div>
+</div>

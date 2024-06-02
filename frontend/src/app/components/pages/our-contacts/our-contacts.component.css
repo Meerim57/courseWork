@@ -1,0 +1,42 @@
+img {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.main-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem;
+  font-size: 16px;
+  color: #3f3f3f;
+}
+
+.main-title {
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: .6rem;
+}
+
+.left-cont {
+  padding: 2rem;
+}
+
+.email-title,
+.phone-title,
+.address-title {
+  font-size: 17px;
+  font-weight: 500;
+  color: #3b3b3b;
+  margin-bottom: .4rem;
+  margin-top: .6rem;
+}
+
+.actual-email1,
+.actual-phone1{
+  margin-bottom: .1rem;
+}
